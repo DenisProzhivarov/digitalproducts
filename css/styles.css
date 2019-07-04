@@ -4851,7 +4851,6 @@ body {
   max-width: 1170px;
   width: 74%;
   margin: 0 auto;
-  outline: 1px solid yellow;
   padding: 0; }
   .container__header {
     max-width: 1120px;
@@ -4945,8 +4944,7 @@ a, menu {
   font-family: ProximaNova, sans-serif;
   font-weight: 700;
   color: #fff;
-  text-transform: uppercase;
-  outline: 1px solid red; }
+  text-transform: uppercase; }
   .menu__links {
     max-width: 90%; }
   .menu__items {
@@ -4960,7 +4958,6 @@ a, menu {
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
     padding: 0;
-    outline: 4px solid gray;
     width: 100%; }
   .menu__item {
     margin-left: 30px;
@@ -4971,8 +4968,7 @@ a, menu {
     -o-text-overflow: ellipsis;
     text-overflow: ellipsis;
     /* Добавляем многоточие */
-    max-width: 125px;
-    outline: 1px solid red; }
+    max-width: 125px; }
   .menu a {
     text-decoration: none; }
   .menu__link {
@@ -5168,8 +5164,7 @@ a, menu {
       .about__text {
         padding-right: 0; } }
   .about__works {
-    width: 32%;
-    outline: 1px solid red; }
+    width: 32%; }
     .about__works--big {
       width: 36%; }
       @media screen and (max-width: 570px) {
@@ -5210,7 +5205,6 @@ a, menu {
   .about__part {
     color: #665f60;
     height: 60vh;
-    outline: 1px solid green;
     padding: 0 11%; }
     .about__part--big {
       color: #fff;
@@ -5486,13 +5480,11 @@ a, menu {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  outline: 1px solid red;
   padding-bottom: 100px; }
 
 .slidet {
   margin-top: 100px;
-  min-height: 330px;
-  outline: 1px solid green; }
+  min-height: 330px; }
   .slidet__text {
     margin: 0;
     padding: 4% 4% 0 4%;
@@ -5594,7 +5586,6 @@ a, menu {
       padding: 0;
       margin: 0; } }
   .social__lists--footer {
-    outline: 1px solid red;
     padding: 0 3%;
     width: 30%;
     margin: 0; }
@@ -5677,7 +5668,6 @@ a, menu {
     position: absolute;
     right: 0;
     top: 280px;
-    outline: 1px solid red;
     -webkit-transition: all .4s ease-in-out;
     -o-transition: all .4s ease-in-out;
     transition: all .4s ease-in-out; }
@@ -5722,39 +5712,38 @@ a, menu {
     /* Обрезаем все, что не помещается в область */
     width: 100%; }
 
-.form {
-  outline: 1px solid red; }
-  .form__input {
-    background-color: rgba(235, 235, 235, 0.4);
-    width: 48%;
-    height: 60px;
-    border: none;
-    outline: none;
-    padding-left: 25px;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    color: #fefefe;
-    margin-bottom: 25px; }
-    .form__input:first-child {
-      margin-right: 3%; }
-    @media screen and (max-width: 750px) {
-      .form__input {
-        width: 100%; } }
-  .form__textarea {
-    background-color: rgba(235, 235, 235, 0.5);
-    border: none;
-    outline: none;
-    padding: 20px 0 0 25px;
-    margin-bottom: 50px;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 18px;
-    font-style: italic;
-    color: #fefefe;
-    width: 100%; }
-    @media screen and (max-width: 750px) {
-      .form__textarea {
-        height: 200px; } }
+.form__input {
+  background-color: rgba(235, 235, 235, 0.4);
+  width: 48%;
+  height: 60px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #fefefe;
+  margin-bottom: 25px; }
+  .form__input:first-child {
+    margin-right: 3%; }
+  @media screen and (max-width: 750px) {
+    .form__input {
+      width: 100%; } }
+
+.form__textarea {
+  background-color: rgba(235, 235, 235, 0.5);
+  border: none;
+  outline: none;
+  padding: 20px 0 0 25px;
+  margin-bottom: 50px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  color: #fefefe;
+  width: 100%; }
+  @media screen and (max-width: 750px) {
+    .form__textarea {
+      height: 200px; } }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -5781,7 +5770,6 @@ textarea::-webkit-input-placeholder {
     padding: 0;
     margin: 0;
     color: #fff;
-    outline: 1px solid green;
     width: 50%;
     white-space: nowrap;
     /* Запрещаем перенос строк */
