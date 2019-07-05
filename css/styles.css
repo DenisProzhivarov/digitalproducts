@@ -5003,7 +5003,7 @@ a, menu {
     border-radius: 50%;
     padding: 30px 3% 30px 3%;
     display: inline-block;
-    width: 25%;
+    width: 50%;
     outline: none;
     border: none; }
   .menu__items.opened {
@@ -5014,12 +5014,11 @@ a, menu {
   .menu__toggler {
     display: block; }
   .menu__item {
-    margin-left: 0;
+    margin: 0 auto;
     display: block;
     text-align: center;
     outline: none;
-    border: none;
-    /* border-bottom: 1px solid rgba(255,255,255, .6); */ }
+    border: none; }
   .menu__link {
     font-size: 2rem; }
     .menu__link:hover, .menu__link:focus, .menu__link:active {
@@ -5030,8 +5029,8 @@ a, menu {
     background-color: transparent;
     outline: none;
     position: fixed;
-    top: 35px;
-    right: 18%;
+    top: 30px;
+    right: 16%;
     z-index: 11;
     background-image: url(../img/menu.svg);
     background-position: center;
@@ -5432,12 +5431,92 @@ a, menu {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative; }
+  .team .slidet {
+    margin-top: 100px;
+    min-height: 330px; }
+    @media screen and (max-width: 610px) {
+      .team .slidet {
+        width: 100%; } }
+    .team .slidet__text {
+      margin: 0;
+      padding: 4% 4% 0 4%;
+      font-family: 'PT Sans', sans-serif;
+      font-size: 24px;
+      height: 34px;
+      font-style: italic;
+      font-weight: normal;
+      color: #665f60;
+      overflow: hidden;
+      /* Обрезаем все, что не помещается в область */
+      max-width: 96%; }
+      @media screen and (max-width: 1260px) {
+        .team .slidet__text:last-child {
+          padding-right: 0; } }
+      @media screen and (max-width: 930px) {
+        .team .slidet__text {
+          padding-top: 4%; }
+          .team .slidet__text:last-child {
+            padding-right: 0; } }
+    .team .slidet__item {
+      width: 100%;
+      height: 240px;
+      background-color: #fff;
+      position: relative; }
+      .team .slidet__item::before {
+        position: absolute;
+        z-index: 2;
+        border-radius: 50%;
+        height: auto;
+        width: 65%;
+        padding-top: 65%;
+        content: "";
+        top: 0%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        background-color: #ebebeb; }
+    .team .slidet__img {
+      position: absolute;
+      z-index: 4;
+      border-radius: 50%;
+      height: auto;
+      width: 55%;
+      top: 0%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+    .team .slidet__headline {
+      max-width: 96%;
+      text-align: center;
+      padding: 45% 0 65px;
+      margin: 0 auto;
+      line-height: 32px;
+      font-size: 24px;
+      font-family: ProximaNova, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+      color: #9f9acf;
+      height: 70px;
+      overflow: hidden;
+      /* Обрезаем все, что не помещается в область */ }
   .team .slick-slider {
     padding: 0 85px;
     padding-bottom: 95px; }
+    @media screen and (max-width: 1260px) {
+      .team .slick-slider {
+        padding: 0px;
+        padding-bottom: 95px; } }
   .team .slick-slide {
     margin-right: 15px;
     margin-left: 15px; }
+    @media screen and (max-width: 523px) {
+      .team .slick-slide {
+        margin-right: 50px;
+        margin-left: 50px; } }
   .team .slick-arrow {
     position: absolute;
     display: inline-block;
@@ -5466,92 +5545,6 @@ a, menu {
       transform: translateY(-50%) rotate(0deg); }
     .team .slick-arrow:hover, .team .slick-arrow:focus, .team .slick-arrow:active {
       opacity: .7; }
-
-.slidert {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -ms-flex-wrap: nowrap;
-  flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding-bottom: 100px; }
-
-.slidet {
-  margin-top: 100px;
-  min-height: 330px; }
-  .slidet__text {
-    margin: 0;
-    padding: 4% 4% 0 4%;
-    font-family: 'PT Sans', sans-serif;
-    font-size: 24px;
-    font-style: italic;
-    font-weight: normal;
-    color: #665f60;
-    overflow: hidden;
-    /* Обрезаем все, что не помещается в область */
-    max-width: 96%; }
-    @media screen and (max-width: 1260px) {
-      .slidet__text {
-        padding-top: 0; }
-        .slidet__text:last-child {
-          padding-right: 0; } }
-    @media screen and (max-width: 930px) {
-      .slidet__text {
-        padding-top: 4%; }
-        .slidet__text:last-child {
-          padding-right: 0; } }
-  .slidet__item {
-    width: 100%;
-    height: 240px;
-    background-color: #fff;
-    position: relative; }
-    .slidet__item::before {
-      position: absolute;
-      z-index: 2;
-      border-radius: 50%;
-      height: auto;
-      width: 65%;
-      padding-top: 65%;
-      content: "";
-      top: 0%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      background-color: #ebebeb; }
-  .slidet__img {
-    position: absolute;
-    z-index: 4;
-    border-radius: 50%;
-    height: auto;
-    width: 55%;
-    top: 0%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .slidet__headline {
-    max-width: 96%;
-    text-align: center;
-    padding: 45% 0 55px;
-    margin: 0 auto;
-    line-height: 32px;
-    font-size: 24px;
-    font-family: ProximaNova, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #9f9acf;
-    height: 70px;
-    overflow: hidden;
-    /* Обрезаем все, что не помещается в область */ }
 
 .social__lists {
   list-style-type: none;

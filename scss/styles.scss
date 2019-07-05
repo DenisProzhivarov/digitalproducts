@@ -24,7 +24,6 @@ html {
 body {
 	height: 100%;
 	font-size: 10px;
-	// line-height: 2.1;
 }
 
 .container {
@@ -50,7 +49,6 @@ body {
     	max-width: 1270px;
     	width: 80%;
     	margin: 0 auto;
-    // border: 1px solid yellow;
     	padding: 0;
     }
     &__map {
@@ -64,7 +62,6 @@ body {
 }
 
 .header {
-
 	background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
@@ -84,7 +81,6 @@ body {
 		@media(max-width:915px){
 			font-size: 5rem;
 		}
-		
 	}
 	&__text {
 		font-style: italic;
@@ -119,7 +115,6 @@ a, menu {
 	&__logo {
 	}
 	&__links {
-		// width: 65%;
 		max-width: 90%;
 	}
 	&__items {
@@ -127,7 +122,6 @@ a, menu {
 		flex-direction: row;
 		flex-wrap: nowrap;
 		padding: 0;
-		// outline: 4px solid gray;
 		width:100%;
 	}
 	&__item {
@@ -135,7 +129,6 @@ a, menu {
 		white-space: nowrap; /* Запрещаем перенос строк */
         overflow: hidden; /* Обрезаем все, что не помещается в область */
         text-overflow: ellipsis; /* Добавляем многоточие */
-		// width: 20%;
 		max-width: 125px;
 		// outline: 1px solid red;
 	}
@@ -174,13 +167,11 @@ a, menu {
 		transform: translate(80%, 0) scale(.3);
 		transition: all .7s ease-in-out;
 		border-radius: 50%; 
-		// background-color: gray;
 		padding: 30px 3% 30px 3%;
 		display: inline-block;
-		width: 25%;
+		width: 50%;
 		outline: none;
 		border: none;
-
 	}
 	.menu__items.opened {
 		transform: translate(15%, 0%) scale(1);
@@ -191,17 +182,13 @@ a, menu {
 	}
 
 	.menu__item {
-		margin-left: 0;
+		margin: 0 auto;
+		// margin-left: 0;
 		display: block;
 		text-align: center;
-		// width: 80%;
 		outline: none;
 		border: none;
-		// padding: .5em;
-		// margin: 0 4em 0 2em;
-		/* border-bottom: 1px solid rgba(255,255,255, .6); */
 	}
-
 	.menu__link {
 		font-size: 2rem;
 		&:hover,
@@ -217,8 +204,8 @@ a, menu {
 		background-color: transparent ;
 		outline: none;
 		position: fixed;
-		top:  35px;
-		right: 18%;  
+		top:  30px;
+		right: 16%;  
 		z-index: 11;
 		background-image: url(../img/menu.svg); 
 		background-position: center;
@@ -228,11 +215,8 @@ a, menu {
 		height: 32px;    
 		transition: all .4s ease-in-out;
 	}
-
 	.menu__items.opened + .toggler {
-		 
-			background-image: url(../img/close.svg); 
-		
+		background-image: url(../img/close.svg); 
 	}
 
 	.toggler:hover, 
@@ -252,7 +236,6 @@ a, menu {
 		width: 30%;
 	}
 }
-
 
 .about {
 	background-color: #ebebeb;
@@ -287,7 +270,6 @@ a, menu {
     		background-position: 50% 50%;
 			background-image: linear-gradient(rgba(159, 154, 207, .5)), url(../img/about.jpg);
 			width: 35%;
-  			// height: 	;
   			margin-right: 5%;
   			display: flex;
   			flex-direction: column;
@@ -301,16 +283,11 @@ a, menu {
 		}
 		@media screen and (max-width: 570px) {
 				width: 100%;
-				// min-height: 250px;
 				margin: 0;
 		}
 
 	}
 	&__pic {
-		// display: flex;
-		// text-align: center;
-		// justify-content: center;
-		// margin-top: 50px;
 		width: 50px;
   		height: 54px;
   		margin: 70px auto 40px;
@@ -324,9 +301,7 @@ a, menu {
 		font-weight: 500;
 		text-transform: uppercase;
 		color: #fff;
-		// white-space: nowrap; /* Запрещаем перенос строк */
         overflow: hidden; /* Обрезаем все, что не помещается в область */
-        // text-overflow: ellipsis; /* Добавляем многоточие */
 	}
 	&__text {
 		padding: 70px 20px 0 0;
@@ -353,35 +328,24 @@ a, menu {
 			width:36%;
 			@media screen and (max-width: 570px) {
 				width: 100%;
-				// min-height: 250px;
 				margin: 0;
 			}
 		}
 		@media screen and (max-width: 570px) {
 				width: 100%;
-				// min-height: 250px;
 				margin: 0;
 		}
-		// min-height: 800px;
 	}
 	&__work {
-		// width: 33%;
-		
-		// min-height: 800px;
-		
 		text-align: center;
 		font-family: 'PT Sans', sans-serif;
 	}
 	&__headline {
-		
 		font-size: 24px;
 		font-weight: 700;
 		padding: 20px 0 15px;
 		height: 70px;
-		// white-space: nowrap; /* Запрещаем перенос строк */
         overflow: hidden; /* Обрезаем все, что не помещается в область */
-        // text-overflow: ellipsis; /* Добавляем многоточие */
-
 		&--big {
 			padding-bottom: 115px;
 		}
@@ -410,7 +374,6 @@ a, menu {
 		}
 	}
 	&__part {
-		// height: 400px;
 		color: #665f60;
 		height: 60vh;
 		// outline: 1px solid green;
@@ -419,7 +382,6 @@ a, menu {
 			color: #fff;
 			height: 120vh;
 			padding: 0 7%;
-			// height: 800px;
 			background-color: #cccccc;
     		background-repeat: no-repeat;
     		background-size: cover;
@@ -429,7 +391,6 @@ a, menu {
 		&--bg{
 			background-color: #dbdbdb;
 		}
-
 	}
 	&__icon {
 		padding-top: 90px;
@@ -440,7 +401,6 @@ a, menu {
 }
 
 .btn {
-	// padding-top: 90px;
 	display: inline-block;
 	padding: 10px;
 	width: 30%;
@@ -459,12 +419,6 @@ a, menu {
 	@media screen and (max-width: 1040px) {
 			width: 60%;
 	}
-	// 	@media screen and (max-width: 580px) {
-	// 		width: 50%;
-	// }
-	// 	@media screen and (max-width: 440px) {
-	// 		width: 50%;
-	// }
 	&:hover,
 	&:focus,
 	&:active {
@@ -473,9 +427,7 @@ a, menu {
 	}
 	&__works {
 		width: 20%;
-		// margin: 0 auto;
 		margin-top: 105px;
-		// margin-top: 0;
 		margin-bottom: 60px;
 		color: #fff;
 		border-color: #fff;
@@ -522,20 +474,14 @@ a, menu {
 		@media screen and (max-width: 700px) {
 			width: 100%;
 		}
-		// @media screen and (max-width: 600px) {
-		// 	width: 70%;
-		// }
 	}
 }
-
-
 
 .works {
 	background-color: #cccccc;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
-    // height: 150vh;
 	color: #fff;
 	background-image: linear-gradient(rgba(159, 154, 207, .9)), url(../img/bgw.jpg);
 	text-align: center;
@@ -548,28 +494,17 @@ a, menu {
 	&__img {
 		padding: 50px 0 25px;
 	}
-	// .slick-slide {
-	// 	width: 735px;
-	// 	height: 550px;
-	// }
-
 	.slider {
-	// padding-bottom: 110px;
-	display: flex;
+		display: flex;
      	flex-direction:row;
      	flex-wrap: nowrap;
      	justify-content: center;
-     	// position: relative;
 	}
-
 	.slide {
 		text-align: center;
-		// margin: 0 50px;
-		// margin: 100px;
 		&__img {
 			display: block;
 			margin: 0 auto;
-			// width: 100%;
 			width: 740px;
 			max-width: 70%;
 			max-height: 545px;
@@ -626,19 +561,7 @@ a, menu {
 		height: 38px;
  		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='38px'%3E%3Cpath fill-rule='evenodd' fill='rgb(230, 230, 230)' d='M21.518,1.990 L2.423,18.999 L21.518,36.009 C21.987,36.303 22.147,36.956 21.877,37.465 C21.606,37.976 21.007,38.151 20.539,37.856 L0.482,19.989 C0.177,19.798 0.020,19.454 0.009,19.098 C0.005,19.064 0.005,19.033 0.003,18.999 C0.005,18.965 0.005,18.933 0.010,18.900 C0.020,18.544 0.177,18.200 0.482,18.008 L20.539,0.142 C21.007,-0.153 21.606,0.022 21.877,0.533 C22.147,1.042 21.987,1.695 21.518,1.990 Z'/%3E%3C/svg%3E");		border: none;
 		border: none;
-		// &:before {
-		// 	display: block;
-		//  	content: "";
-		//  	border-radius: 50%;
-		//  	width:40px;
-		//  	height: 40px;
-		//  	border: 1px solid #fff;
-		//  	position: absolute;
-		//  	left: -110%;
-		//  	top: -160%;
-		// }
 		&.slick-prev {
-			// position: absolute;
 			z-index: 10;
 			left: 2%;
 			top: 50%;
@@ -655,7 +578,6 @@ a, menu {
 			opacity: .7;
 		}
 	}
-
 }
 
 .team {
@@ -664,7 +586,6 @@ a, menu {
     background-size: cover;
     background-position: 50% 50%;
 	text-align: center;
-	// height: 810px;
 	&__img {
 		margin: 50px 0 30px;
 	}
@@ -674,55 +595,105 @@ a, menu {
 		font-size: 3.6rem;
 		margin: 0;
 		padding: 0 0 30px;
-
 	}
 	.slidert {
-	// padding-bottom: 110px;
-	display: flex;
+		display: flex;
      	flex-direction:row;
      	flex-wrap: nowrap;
      	justify-content: center;
      	position: relative;
 	}
-
 	.slidet {
-		// text-align: center;
-		// margin: 0 50px;
-		// margin: 100px;
+		margin-top: 100px;
+		min-height: 330px;
+		// outline: 1px solid green;
+		@media screen and (max-width: 610px) {
+			width:100%;	
+		}
+		&__text {
+			margin: 0;
+			padding: 4% 4% 0 4%;
+			font-family: 'PT Sans', sans-serif;
+			font-size: 24px;
+			height: 34px;
+			font-style: italic;
+			font-weight: normal;
+			color: #665f60;
+			overflow: hidden; /* Обрезаем все, что не помещается в область */
+			max-width:96%;
+			@media screen and (max-width: 1260px) {
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+			@media screen and (max-width: 930px) {
+				padding-top: 4%;
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+		&__item {
+			width: 100%;
+			height: 240px;
+			background-color: #fff;
+			position: relative;
+			&::before {
+				position: absolute;
+				z-index: 2;
+				border-radius: 50%;
+				height: auto;
+				width: 65%;
+				padding-top: 65%;
+				content: "";
+				// border: 1px solid black;
+				top: 0%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				background-color: #ebebeb;
+			}
+		}
 		&__img {
-			// display: block;
-			// margin: 0 auto;
-			// width: 100%;
-			// width: 350px;
-			// width: 30%;
-			// max-height: 470px;
+			position: absolute;
+			z-index: 4;
+			border-radius: 50%;
+			height: auto;
+			width: 55%;
+			top: 0%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		&__headline {
+			max-width:96%;
+			text-align: center;
+			padding:  45% 0 65px;
+			margin: 0 auto;
+			line-height: 32px;
+			font-size: 24px;
+			font-family: ProximaNova, sans-serif;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #9f9acf;
+			height: 70px;
+			overflow: hidden; /* Обрезаем все, что не помещается в область */
 		}
 	}
  	.slick-slider {
-		// width:100%;
     	padding:0 85px;
     	padding-bottom: 95px;
-		
-
+    	@media screen and (max-width: 1260px) {
+			padding: 0px;
+			padding-bottom: 95px;
+		}
 	}
 	.slick-slide {
 		margin-right:15px;
 	    margin-left:15px;
-		// height: 493px;
-		// width: 2.1%;	
-	    // margin-right:15px;
-	    // margin-left:15px;
-	    // padding: 0;
-	    &:last-child {
-	    	// margin-right: 0;
-	    }
-
+	    @media screen and (max-width: 523px) {
+			margin-right:50px;
+	    margin-left:50px;
+		}
 	}
-	// .slick-track {
-	// 	width: 80%;
-
-	// }
-
 	.slick-arrow {
 		position: absolute;
 		display: inline-block;
@@ -732,18 +703,8 @@ a, menu {
 		background-repeat: no-repeat;
 		width: 22px;
 		height: 38px;
-		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='38px'%3E%3Cpath fill-rule='evenodd' fill='rgb(102, 95, 96)' d='M21.997,18.999 C21.995,19.033 21.995,19.065 21.990,19.098 C21.979,19.454 21.822,19.798 21.518,19.989 L1.461,37.856 C0.993,38.151 0.394,37.976 0.123,37.466 C-0.148,36.956 0.013,36.303 0.481,36.009 L19.577,18.999 L0.481,1.989 C0.013,1.695 -0.148,1.042 0.123,0.532 C0.394,0.022 0.993,-0.152 1.461,0.142 L21.518,18.008 C21.822,18.200 21.979,18.544 21.990,18.900 C21.995,18.933 21.995,18.965 21.997,18.999 Z'/%3E%3C/svg%3E");		border: none;
-		// &:before {
-		// 	display: block;
-		//  	content: "";
-		//  	border-radius: 50%;
-		//  	width:40px;
-		//  	height: 40px;
-		//  	border: 1px solid #fff;
-		//  	position: absolute;
-		//  	left: -110%;
-		//  	top: -160%;
-		// }
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='22px' height='38px'%3E%3Cpath fill-rule='evenodd' fill='rgb(102, 95, 96)' d='M21.997,18.999 C21.995,19.033 21.995,19.065 21.990,19.098 C21.979,19.454 21.822,19.798 21.518,19.989 L1.461,37.856 C0.993,38.151 0.394,37.976 0.123,37.466 C-0.148,36.956 0.013,36.303 0.481,36.009 L19.577,18.999 L0.481,1.989 C0.013,1.695 -0.148,1.042 0.123,0.532 C0.394,0.022 0.993,-0.152 1.461,0.142 L21.518,18.008 C21.822,18.200 21.979,18.544 21.990,18.900 C21.995,18.933 21.995,18.965 21.997,18.999 Z'/%3E%3C/svg%3E");		
+		border: none;
 		&.slick-prev {
 			z-index: 10;
 			left: 2%;
@@ -761,103 +722,6 @@ a, menu {
 			opacity: .7;
 		}
 	}
-
-}
-
-.slidert {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	// outline: 1px solid red;
-	padding-bottom: 100px;
-}
-
-.slidet {
-	margin-top: 100px;
-	// width:32%;
-	min-height: 330px;
-	// outline: 1px solid green;
-
-	&__text {
-		margin: 0;
-		// padding: 0;
-		padding: 4% 4% 0 4%;
-		font-family: 'PT Sans', sans-serif;
-		font-size: 24px;
-		font-style: italic;
-		font-weight: normal;
-		color: #665f60;
-		overflow: hidden; /* Обрезаем все, что не помещается в область */
-		max-width:96%;
-		@media screen and (max-width: 1260px) {
-			padding-top: 0;
-			// padding-right: 4%;
-			&:last-child {
-				padding-right: 0;
-			}
-	
-		}
-		@media screen and (max-width: 930px) {
-			padding-top: 4%;
-			// padding-right: 4%;
-			&:last-child {
-				padding-right: 0;
-			}
-	
-		}
-	}
-	&__item {
-		width: 100%;
-		// height: 83%;
-		height: 240px;
-		background-color: #fff;
-		position: relative;
-		&::before {
-			position: absolute;
-			z-index: 2;
-			border-radius: 50%;
-			height: auto;
-			// min-height: auto;
-			width: 65%;
-			padding-top: 65%;
-			// height: 18em;
-			// width: 18em;
-			content: "";
-			// border: 1px solid black;
-			top: 0%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-			background-color: #ebebeb;
-		}
-		
-	}
-	&__img {
-		position: absolute;
-		z-index: 4;
-		border-radius: 50%;
-		height: auto;
-		width: 55%;
-		top: 0%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	&__headline {
-		max-width:96%;
-		text-align: center;
-		padding:  45% 0 55px;
-		margin: 0 auto;
-		line-height: 32px;
-		font-size: 24px;
-		font-family: ProximaNova, sans-serif;
-		font-weight: 700;
-		text-transform: uppercase;
-		color: #9f9acf;
-		height: 70px;
-		overflow: hidden; /* Обрезаем все, что не помещается в область */
-
-
-	}
 }
 
 .social {
@@ -866,7 +730,6 @@ a, menu {
 		padding: 0;
 		margin: 0;
 		height: 60px;
-		// display: inline-block;
 		background-color: #9f9acf;
 		display: flex;
 		flex-direction: row;
@@ -879,78 +742,43 @@ a, menu {
 			height: 80px;
 			flex-wrap: wrap;
 			margin: 0 auto;
-			// padding: 0 5%;
-			// justify-content: space-between;
 		}
 		@media screen and (max-width: 770px) {
 			padding: 0;
 			margin: 0;
-			// padding-right: 4%;
-			// &:last-child {
-			// 	padding-right: 0;
-			// }
-	
 		}
-
 		&--footer {
-			// outline: 1px solid red;
-			// justify-content: flex-end;
 			padding: 0 3%;
 			width: 30%;
-				margin: 0;
-			// margin-right: 0;
+			margin: 0;
 			@media screen and (max-width: 610px) {
-				// padding: 0 75px;
-				// min-height: 250px;
-				// margin: 0;
 				width: 50%;
 			}
 		}
 	}
 	&__list {
-		// display: inline-block;
 		padding: 3%;
-		// padding-top: 0;
 		&:last-child {
 			padding-right: 0;
 		}
 		@media screen and (max-width: 1260px) {
 			padding: 0 3%;
-			// padding-right: 4%;
-			// &:last-child {
-			// 	padding-right: 0;
-			// }
-	
 		}
 		@media screen and (max-width: 770px) {
 			padding: 3%;
-			// padding-right: 4%;
-			// &:last-child {
-			// 	padding-right: 0;
-			// }
-	
 		}
 		@media screen and (max-width: 610px) {
 			padding: 0 3%;
-			// margin: 0;
-			// padding-right: 4%;
-			// &:last-child {
-			// 	padding-right: 0;
-			// }
-	
 		}
 	}
 	&__svg {
 		transition: all .4s ease-in-out;
-		// width: 10px;
-		// height: 10px;
 		&:hover,
 		&:focus,
 		&:active {
 			opacity: .7;
 		}
 	}
-
 }
 
 #map {
@@ -960,14 +788,12 @@ a, menu {
 	height: 100%;
 }
 
-
 .map {
 	background-color: rgba(159, 154, 207, 1);
 	width:100%;
 	height: 900px;
 	position: relative;
 	text-align: center;
-	// background-color: blue;
 	&__img {
 		padding: 50px 0 15px;
 		&--icon {
@@ -991,7 +817,6 @@ a, menu {
 		color: #fff;
 		@media screen and (max-width: 750px) {
 			padding-bottom: 55px;
-	
 		}
 	}
 	&__btn {
@@ -1014,8 +839,7 @@ a, menu {
 		&:focus,
 		&:active {
 			width:250px;
-		}
-		// justify-content: center;	
+		}	
 	}
 	&__icon {
 		background-color: #9f9acf;
@@ -1037,36 +861,26 @@ a, menu {
 			}
 			@media screen and (max-width: 750px) {
 				bottom: 0;
-		
 			}
-
 		}
-
-
 	}
 	&__text {
-		// display: none;
 		font-size: 18px;
-		// width:90%;
 		margin: 0 15px;
 		color: #665f60;
 		font-family: 'PT Sans', sans-serif;
         overflow: hidden; /* Обрезаем все, что не помещается в область */
-
 	}
 	&__info {
 		max-height:60px;
         overflow: hidden; /* Обрезаем все, что не помещается в область */
 		width: 100%;
-
 	}
-	
 }
 
 
 .form {
 	// outline: 1px solid red;
-
 	&__input {
 		background-color: rgba(235,235,235, .4);
 		width: 48%;
@@ -1079,13 +893,11 @@ a, menu {
 		font-style: italic;
 		color: #fefefe;
 		margin-bottom: 25px;
-		
 		&:first-child {
 			margin-right: 3%;
 		}
 		@media screen and (max-width: 750px) {
 			width: 100%;
-	
 		}
 	}
 	&__textarea {
@@ -1101,11 +913,8 @@ a, menu {
 		width: 100%;
 		@media screen and (max-width: 750px) {
 			height: 200px;
-	
 		}
-
 	}
-
 }
 
 input::-webkit-input-placeholder,
